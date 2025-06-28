@@ -92,30 +92,11 @@
 
     <h2>Interesting posts for you</h2>
 
-<div class="row" id="questionsList">
-    <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100">
-            <img src="https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0" class="card-img-top" alt="Question Screenshot">
-            <div class="card-body">
-                <h5 class="card-title">Integration Problem</h5>
-                <p class="card-text">How to solve this complex integration problem?</p>
-                <div class="d-flex align-items-center mb-3">
-                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde" class="rounded-circle me-2" width="30" height="30" alt="User">
-                    <span>John Doe</span>
-                </div>
-                <span class="badge bg-primary mb-2">Calculus</span>
-                <div class="d-flex justify-content-end gap-2">
-                    <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
-                    <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
   
-<!-- 
+
 <div class="row" id="questionsList">
-    <?php foreach ($questions as $question): ?>
+    <?php foreach ($VIP_questions as $question): ?>
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100">
                 <img src="<?php echo htmlspecialchars($question['image']); ?>" class="card-img-top" alt="Question Screenshot">
@@ -123,10 +104,10 @@
                     <h5 class="card-title"><?php echo htmlspecialchars($question['title']); ?></h5>
                     <p class="card-text"><?php echo htmlspecialchars($question['text']); ?></p>
                     <div class="d-flex align-items-center mb-3">
-                        <img src="<?php echo htmlspecialchars($question['user_image']); ?>" class="rounded-circle me-2" width="30" height="30" alt="User">
+                        <!-- <img src="<?php echo htmlspecialchars($question['user_image']); ?>" class="rounded-circle me-2" width="30" height="30" alt="User"> -->
                         <span><?php echo htmlspecialchars($question['username']); ?></span>
                     </div>
-                    <span class="badge bg-primary mb-2"><?php echo htmlspecialchars($question['category']); ?></span>
+                    <span class="badge bg-primary mb-2"><?php echo htmlspecialchars($question['module']); ?></span>
                     <div class="d-flex justify-content-end gap-2">
                         <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
                         <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
@@ -135,87 +116,69 @@
             </div>
         </div>
     <?php endforeach; ?>
-</div> -->
+</div>
 <h2>Other Questions</h2>
-    <!-- Question 1 -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="card h-100" style="border: 1px solid var(--border); border-radius: var(--radius); transition: transform 0.2s;">
-                <div class="card-body p-4">
-                    <div class="d-flex justify-content-between align-items-start mb-3">
-                        <div class="flex-1">
-                            <h5 class="card-title" style="font-size: 1.125rem; font-weight: 600; color: var(--card-foreground); margin-bottom: 0.5rem;">
-                                How to handle asynchronous operations in JavaScript?
-                            </h5>
-                            <p class="card-text mb-3" style="color: var(--foreground); opacity: 0.7; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
-                                I am struggling with understanding promises and async/await in JavaScript. Can someone explain the difference between these approaches and when to use each one? I have tried reading the documentation but I need practical examples.
-                            </p>
-                            <div class="d-flex align-items-center text-muted fs-body2" style="font-size: 0.875rem;">
-                                <span class="me-3">By: <span class="font-weight-bold text-primary">john_doe</span></span>
-                                <span class="me-3">Module: <span class="font-weight-bold badge bg-primary">JavaScript Fundamentals</span></span>
-                                <span>6/20/2024</span>
-                            </div>
-                        </div>
-                        <div class="ms-3 flex-shrink-0">
-                            <div style="width: 80px; height: 80px; background: var(--accent); border-radius: var(--radius); display: flex; align-items: center; justify-content: center;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image" style="color: var(--foreground); opacity: 0.5;">
-                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
-                                    <circle cx="9" cy="9" r="2"></circle>
-                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end gap-2">
-                        <button class="btn btn-sm btn-outline-primary" style="padding: 0.5rem; border-radius: var(--radius);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-pen">
-                                <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
-                            </svg>
-                        </button>
-                        <button class="btn btn-sm btn-outline-danger" style="padding: 0.5rem; border-radius: var(--radius);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2">
-                                <path d="M3 6h18"></path>
-                                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
-                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
-                                <line x1="10" x2="10" y1="11" y2="17"></line>
-                                <line x1="14" x2="14" y1="11" y2="17"></line>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-<!-- 
-    <?php foreach ($questions as $question): ?>
+
+   
+<?php foreach ($questions as $question): ?>
         <div class="row mb-4">
             <div class="col-12">
-                <div class="card h-100">
+                <div class="card h-100" style="border: 1px solid var(--border); border-radius: var(--radius); transition: transform 0.2s;">
                     <div class="card-body p-4">
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <div class="flex-1">
-                                <h5 class="card-title"><?php echo htmlspecialchars($question['title']); ?></h5>
-                                <p class="card-text mb-3" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+                                <h5 class="card-title" style="font-size: 1.125rem; font-weight: 600; color: var(--card-foreground); margin-bottom: 0.5rem;">
+                                    <?php echo htmlspecialchars($question['title']); ?>
+                                </h5>
+                                <p class="card-text mb-3" style="color: var(--foreground); opacity: 0.7; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
                                     <?php echo htmlspecialchars($question['text']); ?>
                                 </p>
-                                <div class="d-flex align-items-center text-muted fs-body2">
-                                    <span class="me-3">By: <span class="font-weight-bold text-primary"><?php echo htmlspecialchars($question['username']); ?></span></span>
-                                    <span class="me-3">Module: <span class="font-weight-bold badge bg-primary"><?php echo htmlspecialchars($question['module']); ?></span></span>
-                                    <span><?php echo htmlspecialchars($question['date']); ?></span>
+                                <div class="d-flex align-items-center text-muted fs-body2" style="font-size: 0.875rem;">
+                                    <span class="me-3">By: <span class="font-weight-bold text-primary"><?php echo htmlspecialchars($question['username'] ?? 'Anonymous'); ?></span></span>
+                                    <span class="me-3">Module: <span class="font-weight-bold badge bg-primary"><?php echo htmlspecialchars($question['module'] ?? 'Uncategorized'); ?></span></span>
+                                    <span><?php echo htmlspecialchars(date('m/d/Y', strtotime($question['date']))); ?></span>
                                 </div>
                             </div>
                             <div class="ms-3 flex-shrink-0">
-                                <img src="<?php echo htmlspecialchars($question['image']); ?>" class="rounded" style="width: 80px; height: 80px; object-fit: cover;" alt="Question Screenshot">
+                                <div style="width: 80px; height: 80px; background: var(--accent); border-radius: var(--radius); display: flex; align-items: center; justify-content: center;">
+                                    <?php if (!empty($question['image'])): ?>
+                                        <img src="<?php echo htmlspecialchars($question['image']); ?>" alt="Question Screenshot" style="width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius);">
+                                    <?php else: ?>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image" style="color: var(--foreground); opacity: 0.5;">
+                                            <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                                            <circle cx="9" cy="9" r="2"></circle>
+                                            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                                        </svg>
+                                    <?php endif; ?>
+                                </div>
                             </div>
                         </div>
                         <div class="d-flex justify-content-end gap-2">
-                            <button class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i></button>
-                            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                            <form action="edit_post.php" method="GET" class="d-inline">
+                                <input type="hidden" name="id" value="<?php echo htmlspecialchars($question['id']); ?>">
+                                <button type="submit" class="btn btn-sm btn-outline-primary" style="padding: 0.5rem; border-radius: var(--radius);" aria-label="Edit post">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-pen">
+                                        <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                        <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
+                                    </svg>
+                                </button>
+                            </form>
+                            <form action="delete_post.php" method="POST" class="d-inline">
+                                <input type="hidden" name="id" value="<?php echo htmlspecialchars($question['id']); ?>">
+                                <button type="submit" class="btn btn-sm btn-outline-danger" style="padding: 0.5rem; border-radius: var(--radius);" aria-label="Delete post">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                        <line x1="10" x2="10" y1="11" y2="17"></line>
+                                        <line x1="14" x2="14" y1="11" y2="17"></line>
+                                    </svg>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <?php endforeach; ?> -->
+    <?php endforeach; ?>
