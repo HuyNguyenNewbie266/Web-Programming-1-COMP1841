@@ -10,7 +10,6 @@
 </head>
 
 <body data-bs-theme="light">
-<body data-bs-theme="light">
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">StudyHub</a>
