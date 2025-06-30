@@ -6,13 +6,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
     <title><?=$title?></title>
 </head>
 
 <body data-bs-theme="light">
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">StudyHub</a>
+            <a class="navbar-brand text-white" href="index.php">GrenovateHub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,7 +45,7 @@
             </div>
         </div>
     </nav>
-    
+
     <main>
     <?=$output;?>
     </main>
